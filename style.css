@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+
+
+/*----------------Container-----------*/
+
+.cal-container{
+    text-align: center;
+    margin: 4rem 1rem ;
+    padding: 0rem 1rem;
+}
+
+/* ----------- calculator items section ------------*/
+
+.cal-items{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.item-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.cal-items #number-inputs {
+    height: 7rem;
+    width: 300px;
+    display: block;
+    margin: auto;
+
+}
+.cal-items .cal-item-sec-1 {
+    display: grid;
+    grid-gap: 0.5rem 1rem;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(6, 1fr);
+    margin-right: 1.2rem ;
+}
+
+.cal-item-sec-1 img {
+    background-color: #d6582a;
+    border: 2px solid #000000;
+    padding: 1rem 1.2rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cal-items .cal-item-sec-2 {
+    display: grid;
+    grid-gap: 0.5rem 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.cal-item-sec-1  button{
+    font-size: 1.2rem;
+    border: 2px solid #000000;
+    background-color: #000000;
+    padding: 1rem 1.2rem;
+    border-radius: 3px;
+    color: #ffff;
+    cursor: pointer;
+}
+.cal-item-sec-2  button{
+    font-size: 1.5rem;
+    border: 2px solid #000000;
+    background-color: #000000;
+    padding: 0.5rem 1.2rem;
+    border-radius: 3px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.cal-item-sec-2 #equal-to{
+    color: #d6582a;
+}
+
+
